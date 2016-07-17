@@ -1,0 +1,409 @@
+	a{
+		text-decoration:none;
+		color:black;
+		cursor:pointer;
+		font-family:"Arial", serif;
+	}
+	p{
+		margin:0px;
+		font-family:"Arial", serif;
+	}
+	h3{
+	margin:0px;font-family:"Arial", serif;}
+	h1{
+	margin:0px;font-family:"Arial" ,serif;}
+	
+
+
+
+.body{
+	width:100%;
+	height:100%;
+	background:#c4bd91;
+	display:inline-block;
+	margin:0px;
+}
+
+
+.top {
+	padding-top:0px;
+	display:block;
+	width:1024px;
+	height:120px;
+	background:#121212;
+}
+.left-top{
+	padding-left:50px;
+	float:left;
+	line-height:120px;
+	display:inline-block;
+	color:red;
+	font-size:70px;
+}
+.right-top{
+	padding-right:80px;
+	float:right;
+	line-height:120px;
+	display:inline-block;
+	color:red;
+	font-size:70px;
+}
+.logo{
+	height:120px;
+	display:inline-block;
+	position:relative;
+	
+}
+
+
+
+.menu {
+	display:inline-block;
+	width:1024px;
+	height:60px;
+	background:#EC2323;
+	
+}
+
+.menu-left-links{
+	float:left;
+	font-size:20px;
+	border-right:1px double black;
+	display: inline-block;
+	position:relative;
+	
+	
+	
+}
+.menu-right{
+	line-height:60px;
+	float:right;
+	padding-right:20px;
+	
+}
+.navi:hover{
+	 background:#2F2828;
+	 
+}
+.navi1{
+	color:white;
+	display: inline-block;
+	width:150px;
+	line-height:60px;
+	background:#2F2828;
+}
+.navi{
+	color:white;
+	display: inline-block;
+	width:150px;
+	line-height:60px;
+	transition:0.5s;
+}
+
+
+
+
+/*--Home-------------------------------------------------------------------------------------------------------------------------------------*/
+/*--Home-------------------------------------------------------------------------------------------------------------------------------------*/
+/*--Home-------------------------------------------------------------------------------------------------------------------------------------*/
+/*--Home-------------------------------------------------------------------------------------------------------------------------------------*/
+/*--Home-------------------------------------------------------------------------------------------------------------------------------------*/
+	
+
+
+
+.content {
+	min-height:344px;
+	margin-top:-4px;
+	display:block;
+	width:1024px;
+	height:100%;
+	background:#ffffff;
+	padding-top:20px;
+}
+
+
+ .slider {
+	 border:10px solid;
+	 border-color:red;
+ z-index: 9;
+ width: 900px;
+ height: 400px;
+ overflow: hidden;
+ margin: 0 0 7px;
+ position: relative;
+ vertical-align:middle;
+ }
+ .slider ul,
+ .slider li {
+ padding: 0;
+ margin: 0;
+ list-style-type: none;
+ }
+ .slider ul {
+ width: 9999px; 
+ }
+ .slider ul li {
+ list-style-type: none;
+ float: left;
+ width: 900px;
+ height: 400px;
+ }
+ .slider .nav {
+	 left:402px;
+ position: absolute;
+ bottom: 12px; 
+ 
+ }
+ .slider .nav span {
+ opacity: 0.9;
+ background: #fff;
+ margin: 0 8px 0 0;
+ width: 16px;
+ height: 16px;
+ border-radius: 8px;
+ cursor: pointer;
+ overflow: hidden;
+ display: block;
+ float: left;
+ box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+ background: red;
+ }
+
+ .news-content{
+	 display:inline-block;
+	 width:900px;
+	 border:5px;
+	 height:1280px;
+	 margin-left:2px;
+	 background-color:#ECECEC;
+	 border-bottom-left-radius:5px;
+	 border-bottom-right-radius:5px;
+ }
+ .news{
+	 display:inline-block;
+	 width:900px;
+	 height:178px;
+	 background-color:#121212;
+	 margin-bottom:20px;
+ }
+  .news-title{
+	 display:inline-block;
+	  line-height:178px;
+	  position:relative;
+	  float:left;
+	  padding-left:20px;
+	  color:white;
+	  font-size:40px;
+ }
+  .news-img{
+	  position:relative;
+	 display:inline-block;
+	 float:right;
+	 width:760px;
+	 height:178px;
+ }
+ .new-comics{
+	 margin-left:20px;
+	 height:200px;
+	 width:900px;
+	 float:left;
+	 display:inline-block;
+	 margin-top:30px;
+ }
+ .left-new-comics{
+	 margin-left:26px;
+	 height:200px;
+	 display:inline-block;
+	 float:left;
+ }
+ .right-new-comics{
+	 height:200px;
+	 width:550px;
+	 display:inline-block;
+ }
+ 
+ 
+ .new-comics-img{
+	 height:200px;
+	 width:300px;
+	 display:inline-block;
+	 border-bottom:grey;
+	 border-right:grey;
+ }
+ .new-comics-title{
+	 font-size:22px;
+	 display:inline-block;
+	 float:left;
+	 text-decoration:none;
+ }
+ .new-comics-title:hover{
+	 color:red;
+ }
+ .new-comics-discription{
+	 width:500px;
+	 font-size:14px;
+	 margin-top:10px;
+	 display:inline-block;
+	 float:left;
+	 text-align:left;
+ }
+ 
+ .buy{
+	 display:inline-block;
+	 position:relative;
+	 float:right;
+	 background:black;
+	 color:white;
+	 margin-top:110px;
+	 margin-right:55px;
+	 padding:10px;
+	 padding-left:20px;
+	 padding-right:20px;
+ }
+ .buy:hover{
+	 color:red;
+ }
+  .price{
+	  font-size:19px;
+	  display:inline-block;
+	 position:relative;
+	 background-color:#FF0202;
+	 float:right;
+	 color:white;
+	 margin-top:110px;
+	 padding:8px;
+ }
+	#box{ 
+	display:inline-block;
+	position:relative;
+	width:250px;
+	height:55px;
+	border:1px solid;
+	border-color:black;
+	background:yellow;
+	}
+	
+	 
+	 
+ 
+
+/*--shop---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--shop---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--shop---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--shop---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.shop-comics{
+	margin-top:30px;
+	margin-left:15px;
+	margin-right:15px;
+	display:inline-block;
+	width:200px;
+	height:100%;
+	border:5px solid;
+	border-color:black;
+	background-color:#ECECEC;
+	transition:0.5s;
+}
+.shop-comics:hover{
+	border-color:red;
+}
+.shop-comics-top{
+	width:190px;
+	height:290px;
+	padding-top:10px;
+	display:block;
+}
+.shop-comics-img{
+	width:180px;
+	height:270px;
+}
+.shop-comics-bottom{
+	height:100px;
+	width:190px;
+}
+
+.shop-comics-title-links{
+	display:inline-block;
+}
+
+.shop-comics-title{
+	width:190px;
+	height:30px;
+	display:inline-block;
+	font-size:15px;
+	 text-align:center;
+	 float:left;
+}
+.shop-comics-title:hover{
+	 color:red;
+ }
+ .shop-comics-discription{
+	 font-size:13px;
+	 text-align:center;
+	 width:190px;
+
+ }
+ .shop-buy{
+	 font-size:16px;
+	 display:inline-block;
+	 position:relative;
+	 background:black;
+	 color:white;
+	 padding:8px;
+	 float:left;
+	 margin-left:22px;
+	 margin-top:10px;
+	 
+ }
+ .shop-buy:hover{
+	 color:red;
+ }
+  .shop-price{
+	  width:98px;
+	  font-size:16px;
+	  display:inline-block;
+	 position:relative;
+	 background-color:#FF0202;
+	 color:white;
+	 padding-top:8px;
+	 padding-bottom:8px;
+	 float:left;
+	 margin-top:10px;
+ }
+ 
+ 
+ 
+ /*--Contacts---------------------------------------------------------------------------------------------------------------------------------*/
+ /*--Contacts---------------------------------------------------------------------------------------------------------------------------------*/
+ /*--Contacts---------------------------------------------------------------------------------------------------------------------------------*/
+ /*--Contacts---------------------------------------------------------------------------------------------------------------------------------*/
+	
+
+.my-comics{
+margin-bottom:14px;
+}
+	
+	
+	
+	
+	
+ /*--How to buy---------------------------------------------------------------------------------------------------------------------------------*/
+ /*--How to buy---------------------------------------------------------------------------------------------------------------------------------*/
+ /*--How to buy---------------------------------------------------------------------------------------------------------------------------------*/
+ /*--How to buy---------------------------------------------------------------------------------------------------------------------------------*/
+	
+	
+.how-to-buy{
+	margin-top:80px;
+	width:500px;
+	height:140px;
+border:1px double red;
+border-radius:3px;
+background-color:white;
+}	
+
+	
+
