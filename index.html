@@ -1,137 +1,131 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <link rel="shortcut icon" href="images/ico.png"></link>
-	<title>Marvel Comics Store</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Redex - Ваш новый ритм жизни</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8; charset=windows-1251" />
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<script src="./carousel_files/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
- $(".slider").each(function () { // ������������ ������ �������
-  var obj = $(this);
-  $(obj).append("<div class='nav'></div>");
-  $(obj).find("li").each(function () {
-   $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // ��������� ���� ���������
-   $(this).addClass("slider"+$(this).index());
-  });
-  $(obj).find("span").first().addClass("on"); // ������ �������� ������ ������� ����
- });
-});
-function sliderJS (obj, sl) { // slider function
- var ul = $(sl).find("ul"); // ������� ����
- var bl = $(sl).find("li.slider"+obj); // ������� ����� �� ��������� �����
- var step = $(bl).width(); // ������ �������
- $(ul).animate({marginLeft: "-"+step*obj}, 500); // 500 ��� �������� ���������
-}
-$(document).on("click", ".slider .nav span", function() { // slider click navigate
- var sl = $(this).closest(".slider"); // �������, � ����� ����� ��� ����
- $(sl).find("span").removeClass("on"); // ������� �������� �������
- $(this).addClass("on"); // ������ �������� �������
- var obj = $(this).attr("rel"); // ������ ��� �����
- sliderJS(obj, sl); // �������
- return false;
-});
-</script>
 </head>
-<body class="body">
-	<center>
-		<div class="top">
-		<h1 class="left-top">COMICS</h1>
-		<img src="images/logo.png" class="logo"/>
-		<h1 class="right-top">STORE</h1>
-		</div>
-		<div class="menu">
-			<div class="menu-left-links"><a href="index.html" class="navi1">HOME</a></div>
-			<div class="menu-left-links"><a href="index2.html" class="navi">SHOP</a></div>
-			<div class="menu-left-links"><a href="index3.html" class="navi">FUN</a></div>
-			<div class="menu-left-links"><a href="index4.html" class="navi">HOW TO BUY</a></div>
-			<div class="menu-right">
-			<input name="nomer2" value="Search"	title="Search" size="20" type="text" onblur="this.value=(this.value=='')?this.title:this.value;" onfocus="this.value=(this.value==this.title)?'':this.value;"
-			style="		color: rgb(255, 255, 255); 
-						border: 2px solid rgb(100, 117, 134); 
-						padding: 5px 2px 5px 30px; 
-						background: url(images/searsh.png) no-repeat scroll 5% 50% rgb(68, 85, 102);
-			">
-			
+<body>
+	<div style="position:absolute; width:100%;">
+	<header>
+		<div id="wrapper">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" id="logo"/></a>
 			</div>
-		</div>
-		<div class="content">
-			<div class="slider">
+			<div class="menu">
 				<ul>
-					<li><img src="images/1.jpg" style="height:100%" class="slide" alt=""></li>
-					<li><img src="images/2.jpg" style="height:100%" class="slide" alt=""></li>
-					<li><img src="images/3.jpg" style="height:100%" class="slide" alt=""></li>
-					<li><img src="images/4.jpg" style="height:100%" class="slide" alt=""></li>
+					<a href=""><li>Главная</li></a>
+					<a href=""><li>Обменник</li></a>
+					<a href=""><li>Помощь</li></a>
+					<a href=""><li>Личный кабинет</li></a>
 				</ul>
 			</div>
-			<div style="width:910px; margin-top:30px; margin-bottom:30px; height:4px; background-color:#B5B1B1; border-radius:3px;"></div>
-			<div class="news-content">
-				<div class="news">
-					<h1 class="news-title">News</h1>
-					<img src="images/news.png"/ class="news-img">
+		<div>
+	</header>
+	<content>
+		<div id="sl">
+			<div id="wrapper">
+				<center>
+				<div id="sl1">
+					<img src="images/slide1.png" style="" id="slide1" alt="">
 				</div>
-				<div class="new-comics">
-						<div class="left-new-comics">
-							<img src="images/1.jpg" class="new-comics-img" />
-						</div>
-						<div class="right-new-comics">
-							<a href="#"><h3 class="new-comics-title">Follow the History of the Hulk Pt. 16</h3></a>
-							<p class="new-comics-discription">Bruce Banner bounces back and forth with his alter ego!</p>
-							<a href="index4.html"><p class="buy">BUY</p></a>
-							<h3 class="price">Costs: 3,99$</h3>
-						</div>
-				</div>
-				<div style="width:810px; margin-top:30px; height:4px; background-color:red; border-radius:3px; display:inline-block; position:relative;"></div>
-				<div class="new-comics">
-						<div class="left-new-comics">
-							<img src="images/2.jpg" class="new-comics-img" />
-						</div>
-						<div class="right-new-comics">
-							<a href="#"><h3 class="new-comics-title">Uncanny X-Men: Archangel of the Apocalypse</h3></a>
-							<p class="new-comics-discription">Track the transformations of Warren Worthington!</p>
-							<a href="index4.html"><p class="buy">BUY</p></a>
-							<h3 class="price">Costs: 2,5$</h3>
-						</div>
-				</div>
-				<div style="width:810px; margin-top:30px; height:4px; background-color:red; border-radius:3px; display:inline-block; position:relative;"></div>
-
-				<div class="new-comics">
-						<div class="left-new-comics">
-							<img src="images/3.jpg" class="new-comics-img" />
-						</div>
-						<div class="right-new-comics">
-							<a href="#"><h3 class="new-comics-title">THIS WEEK IN MARVEL</h3></a>
-							<p class="new-comics-discription">It's down to the wire with a new This Week in Marvel!</p>
-							<a href="index4.html"><p class="buy">BUY</p></a>
-							<h3 class="price">Costs: 4,25$</h3>
-						</div>
-				</div>
-				<div style="width:810px; margin-top:30px; height:4px; background-color:red; border-radius:3px; display:inline-block; position:relative;"></div>
-				<div class="new-comics">
-						<div class="left-new-comics">
-							<img src="images/4.jpg" class="new-comics-img" />
-						</div>
-						<div class="right-new-comics">
-							<a href="#"><h3 class="new-comics-title">Voices of Marvel with Ta-Nehisi Coates</h3></a>
-							<p class="new-comics-discription">The Women of Marvel introduce a new segment with the Black Panther Writer!</p>
-							<a href="index4.html"><p class="buy">BUY</p></a>
-							<h3 class="price">Costs: 2,99$</h3>
-						</div>
-				</div>
-				
-				</div>
-				<br>
-				<br>
-				<a href="index2.html"><p style="margin:0px; display:inline-block; padding:10px; margin-bottom:-10px;position:relative;background-color:red; color:white;">SHOW MORE</p></a>
-				<div style="width:1024px; padding-top:-10px; height:7px; background-color:red; display:inline-block; position:relative;"></div>
-				
+				<div id="mal">
+					<div id="qwe">
+					Ищите честный и щедрый маркетинг?
+					<p id="qwee">REDEX</p>
+					<p id="qweee">
+						Первая компания с элементами сетевого маркетинга, в которой все 100% прибыли идут в сеть.
+					</p>
+					<br>
+					<a href="" id="reg">Регистрация</a>
+					</div>
+				</div>	
+				</center>
 			</div>
 		</div>
-		<footer style="width:1024px; height:100px;background-color:black;">
-			<p style="line-height:100px; margin-left:40px; float:left; color:red;">Create by 4upakabra</p>
-			<p style="line-height:100px; margin-right:40px; float:right; color:red;"> Marvel Comics store</p>
-		</footer>
+		<div id="wrapper">
+			<p style="font-size: 36px;text-align: center;text-transform: uppercase;font-family: Roboto Slab,serif;color: #717171; margin-bottom:25px;">ЧТО ВЫ ПОЛУЧАЕТЕ?</p>
+			<center><div style="background-color:#717171; border:5px; border-radius:5px; width:140px; height:4px;"></div><center>
+			<div id="content-text">
+				Зарегистрировавшись в системе и став участником проекта RedeX, для Вас
+				открываются возможности формирования глобального интернет бизнеса с элементами сетевого маркетинга XXI века.
+				Бизнес, который генерирует все Ваши действия в справедливый результат.
+			</div>
+			<div id="box">
+				<div class="box">
+					<div class="head-text">
+						<strong>
+							УНИКАЛЬНАЯ СИСТЕМА ЗАЩИТЫ
+						</strong>
+					</div>
+					<div class="texts">
+						Сайт защищен и сертифицирован под сертификатом SSL,
+						который шифрует все передаваемые данные клиента во
+						время онлайн транзакции. Это безопасное соединение,
+						которое гарантирует, что передаваемая информация от
+						вашего браузера на сервер останется приватной, то есть
+						защищенной от хакеров или любого, кто хочет украсть информацию.
+					</div>
+				</div>
+				<div class="box">
+					<div class="head-text">
+						<strong>
+							ДОСТУПНОСТЬ СРЕДСТВ 24/7
+						</strong>
+					</div>
+					<div class="texts">
+						Одним из важнейших плюсов является система автоматической отправки
+						полученных бонусов напрямую на Ваше внешнее хранилище, которое ни
+						коем образом не относится к компании RedeX, что позволяет предотвратить
+						такие неприятные моменты, как задержка или блокировка доступа к
+						Вашим средствам самой компанией RedeX.
+					</div>
+				</div>
+				<div class="box">
+					<div class="head-text">
+						<strong>
+							МЕЖДУНАРОДНЫЙ БИЗНЕС
+						</strong>
+					</div>
+					<div class="texts">
+						Тренд XXI века - "Бизнес в кармане" 
+						Смартфон, планшет, нетбук или ноутбук, плюс доступ в интернет
+						 дают Вам возможность формировать команды совершенно в любой
+						 стране мира. Другими словами - бизнес без границ.
+					</div>
+				</div>
+				<div class="box">
+					<div class="head-text">
+						<strong>
+							СЛУЖБА ПОДДЕРЖКИ
+						</strong>
+					</div>
+					<div class="texts">
+						Отзывчивая и всегда доступная служба технической поддержки с радостью поможет
+						Вам разобраться с вопросами на которые Вы не нашли ответы. Наши специалисты ответят Вам в течении 24 часов.
+					</div>
+				</div>
+			</div>
+			<div id="kartinki">
+				<img src="images/3.jpg" id="kk"/>
+				<img src="images/2.jpg" id="kk"/>
+			</div>
+		</div>
+	</content>
+	<footer>
+	<center>
+		<div id="box-links">
+			<img src="images/faceboock.png" id="sp"/>
+			<img src="images/google.png" id="sp"/>
+			<img src="images/tweet.png" id="sp"/>
+			<img src="images/vk.png" id="sp"/>
+		</div>
 	</center>
-</body>			
+	</footer>
+	</div>
+</body>
+</html>			
