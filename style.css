@@ -44,6 +44,7 @@ h1{
 	width:198px;
 	height:80px;
 	display:inline-block;
+	margin-left: 12px;
 }
 .logo-img{
 	padding-left:1px;
@@ -57,6 +58,13 @@ h1{
 	display:inline-block;
 	vertical-align:middle;
 	height:80px;
+}
+.logo-text p{
+	font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: -2px;
 }
 
 /**  navigation **/
